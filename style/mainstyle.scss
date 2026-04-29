@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Farabee';
+    src: url('../fonts/Farabee Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FarabeeStraight';
+    src: url('../fonts/Farabee Straight Regular.ttf') format('truetype');
+}
+$FontCurvy: 'Farabee', sans-serif;
+$FontStraight: 'FarabeeStraight', sans-serif;
+$color-wine: #893030;
+$color-bg: #4A2727;
+$color-blockbg: #2A1616;
+$color-text: #FFFFFF;
+$color-trs-black: rgba(0,0,0,.5);
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+html{
+    padding: 0;
+    color: $color-text;
+}
+body{
+    margin: 0;
+    background-color: $color-bg;
+}
+.curvyfont{
+    font-family: $FontCurvy;
+}
+header{
+    position:fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-wine;
+    padding: 0 20px;
+    .logobox{
+        margin: 5px;
+    }
+    nav{
+        margin: 0 40px;
+        display: inline-block;
+        a{
+            color: $color-text;
+            font-family: $FontStraight;
+            text-decoration: none;
+            margin: 0;
+            font-size: 17px;
+            padding: 15px 15px;
+            &:hover{
+                transition: color .2s ease-in;
+                color: coral;
+            }
+        }
+    }
+}
+main{
+    section{
+        margin-bottom: 40px;
+        .banner-main{
+            img{
+                width: 100%;
+                height: 100vh;
+            }
+            .float-box{
+                animation: appear 1s ease-in forwards;
+                position: absolute;
+                top: 50%;
+                background-color: $color-trs-black;
+                width: 100%;
+                p{
+                    
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: $FontStraight;
+                    a{  
+                        color: $color-text;
+                        text-decoration: none;
+                        font-weight: 700;
+                        &:hover{
+                            transition: color .2s ease-in;
+                            color: coral;
+                        }
+                    }
+                }
+            }
+        }
+        .titles{
+                margin: 0;
+                padding: 15px 0;
+                background-color: $color-trs-black;
+                text-align: center;
+                font-size: 30px;
+                font-family: $FontStraight;
+            }
+        .infoblock{
+            background-color: $color-blockbg;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            h1, h2, h3{
+                text-align: center;
+                font-family: $FontStraight;
+            }
+            
+            &-text{
+                flex: 1;
+                p{
+                font-family: $FontCurvy;
+                margin-top: 5px;
+                font-size: 17px;
+                }
+            }
+            
+            &-img{
+                flex: 0 0 300px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    border-radius: 3px;
+                }
+            }
+        }
+        
+    }
+    
+}
+
