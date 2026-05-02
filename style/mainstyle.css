@@ -94,10 +94,17 @@ main section .infoblock-text a:hover {
 }
 main section .infoblock-img {
   flex: 0 0 300px;
+  width: 100%;
 }
 main section .infoblock-img img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 3px;
+}
+@media (max-width: 768px) {
+  main section .infoblock {
+    display: flex;
+    flex-direction: column;
+  }
 }
