@@ -22,6 +22,10 @@ body {
   font-family: "Farabee", sans-serif;
 }
 
+main {
+  padding-top: 89px;
+}
+
 header {
   position: fixed;
   z-index: 100;

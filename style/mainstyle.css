@@ -18,9 +18,6 @@
 main section {
   margin-bottom: 40px;
 }
-main section:first-child {
-  padding-top: 89px;
-}
 main section .banner-main img {
   width: 100%;
   height: 90vh;

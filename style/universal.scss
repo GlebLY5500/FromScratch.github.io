@@ -11,6 +11,9 @@ body{
 .curvyfont{
     font-family: $FontCurvy;
 }
+main{
+    padding-top: 89px;
+}
 header{
     position:fixed;
     z-index: 100;
