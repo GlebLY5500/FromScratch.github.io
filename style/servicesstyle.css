@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Farabee";
   src: url("../fonts/Farabee Regular.ttf") format("truetype");
@@ -91,9 +90,6 @@ body {
   line-height: 1.6;
   opacity: 0.8;
   margin-bottom: 20px;
-}
-.service-card__price ::before {
-  content: "от ";
 }
 .service-card__price {
   font-weight: bold;

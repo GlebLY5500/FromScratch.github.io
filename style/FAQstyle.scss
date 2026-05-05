@@ -1,0 +1,89 @@
+@import 'variables-fonts';
+
+main {
+    background-color: $color-bg;
+    min-height: calc(100vh - 150px);
+    padding: 80px 20px;
+    color: $color-text;
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: $FontCurvy;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        text-align: center;
+        margin-bottom: 50px;
+        color: $color-accent;
+        text-transform: uppercase;
+    }
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: $color-blockbg;
+    border: 1px solid $color-wine;
+    border-radius: 2px;
+}
+
+.faq-input {
+    display: none;
+
+    &:checked {
+        & ~ .faq-answer {
+            max-height: 1000px;
+            padding: 25px;
+            border-top: 1px solid $color-wine-darker;
+            opacity: 1;
+        }
+    }
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    cursor: pointer;
+    font-family: $FontStraight;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    user-select: none;
+    transition: $transition-ease;
+
+    &:hover {
+        background-color: rgba($color-wine, 0.1);
+    }
+
+    .faq-icon {
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        line-height: 1;
+        color: $color-text;
+        font-weight: normal;
+    }
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 25px;
+    background-color: $color-blockbg-transparent;
+    transition: $transition-ease;
+    font-family: $FontStraight;
+    line-height: 1.6;
+    color: rgba($color-text, 0.85);
+    font-size: 1.1rem;
+
+    p {
+        margin: 0;
+    }
+}

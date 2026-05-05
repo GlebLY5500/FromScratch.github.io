@@ -7,7 +7,7 @@
   src: url("../fonts/Farabee Straight Regular.ttf") format("truetype");
 }
 /*#FFD700;*/ /*#d7bc95;*/
-.order-page {
+main {
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
@@ -17,18 +17,18 @@
   color: #FFFFFF;
   flex-direction: column;
 }
-.order-page .order-container {
+main .order-container {
   background-color: #2A1616;
   width: 100%;
   max-width: 700px;
   padding: 50px;
   border-radius: 4px;
 }
-.order-page .order-header {
+main .order-header {
   text-align: center;
   margin-bottom: 40px;
 }
-.order-page .order-header .order-title {
+main .order-header .order-title {
   font-family: "Farabee", sans-serif;
   font-size: 2.5rem;
   color: #F4A460;
@@ -36,22 +36,22 @@
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
-.order-page .order-header .order-subtitle {
+main .order-header .order-subtitle {
   font-size: 1rem;
   opacity: 0.7;
 }
-.order-page .order-form .form-group {
+main .order-form .form-group {
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
 }
-.order-page .order-form .form-group label {
+main .order-form .form-group label {
   font-size: 0.9rem;
   margin-bottom: 8px;
   color: #F4A460;
   text-transform: uppercase;
 }
-.order-page .order-form .form-group input, .order-page .order-form .form-group select, .order-page .order-form .form-group textarea {
+main .order-form .form-group input, main .order-form .form-group select, main .order-form .form-group textarea {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(244, 164, 96, 0.2);
   border-radius: 4px;
@@ -60,41 +60,41 @@
   font-family: "Farabee", sans-serif;
   transition: all 0.3s ease;
 }
-.order-page .order-form .form-group input:focus, .order-page .order-form .form-group select:focus, .order-page .order-form .form-group textarea:focus {
+main .order-form .form-group input:focus, main .order-form .form-group select:focus, main .order-form .form-group textarea:focus {
   outline: none;
   border-color: #F4A460;
   background: rgba(244, 164, 96, 0.05);
 }
-.order-page .order-form .form-group input::-moz-placeholder, .order-page .order-form .form-group select::-moz-placeholder, .order-page .order-form .form-group textarea::-moz-placeholder {
+main .order-form .form-group input::-moz-placeholder, main .order-form .form-group select::-moz-placeholder, main .order-form .form-group textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-.order-page .order-form .form-group input::placeholder, .order-page .order-form .form-group select::placeholder, .order-page .order-form .form-group textarea::placeholder {
+main .order-form .form-group input::placeholder, main .order-form .form-group select::placeholder, main .order-form .form-group textarea::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-.order-page .order-form .form-group select {
+main .order-form .form-group select {
   cursor: pointer;
 }
-.order-page .order-form .form-group select option {
+main .order-form .form-group select option {
   background: #2A1616;
 }
-.order-page .order-form .form-row {
+main .order-form .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 @media (max-width: 600px) {
-  .order-page .order-form .form-row {
+  main .order-form .form-row {
     grid-template-columns: 1fr;
   }
 }
-.order-page .order-form .form-footer {
+main .order-form .form-footer {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.order-page .order-form .submit-btn {
+main .order-form .submit-btn {
   background-color: #893030;
   color: #FFFFFF;
   border: 2px solid #F4A460;
@@ -106,7 +106,7 @@
   transition: all 0.3s ease;
   width: 100%;
 }
-.order-page .order-form .submit-btn:hover {
+main .order-form .submit-btn:hover {
   background-color: #F4A460;
   color: #2A1616;
   font-weight: bold;

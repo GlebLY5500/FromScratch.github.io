@@ -97,9 +97,6 @@ body{
   }
 
   &__price {
-    ::before{
-      content: 'от ';
-    }
     font-weight: bold;
     color: $color-accent;
     font-size: 18px;

@@ -25,15 +25,15 @@
             <a href="services.html">Услуги</a>
             <a href="contacts.html">Контакты</a>
             <a href="#">| Оставить заявку |</a>
-            <a href="#">ЧАВО</a>
+            <a href="FAQ.html">ЧАВО</a>
         </nav>
     </header>
-    <main class="order-page">
+    <main>
         <section class="order-container">
             <div class="order-header">
                 <h1 class="order-title">Оставить заявку</h1>
                 <p class="order-subtitle">Расскажите о вашей идее, и мы воплотим её в жизнь</p>
-                <p class="order-subtitle">(После отправки формы ждите звока/сообщения специалиста)</p>
+                <p class="order-subtitle">(После отправки формы ждите звонка/сообщения специалиста)</p>
             </div>
 
             <form class="order-form">
@@ -43,14 +43,14 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group">
+                    <p class="form-group">
                         <label for="phone">Телефон</label>
                         <input type="tel" id="phone" name="phone" placeholder="+375 (__) ___-__-__" required>
-                    </div>
-                    <div class="form-group">
+                    </p>
+                    <p class="form-group">
                         <label for="service">Тип услуги</label>
-                        <select id="service" name="service">
-                            <option disabled selected>Выберите услугу...</option>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Выберите услугу...</option>
                             <option disabled></option>
                             <option disabled>Индивидуальный пошив:</option>
                             <option value="suit">Мужской костюм</option>
@@ -75,19 +75,19 @@
                             <option disabled></option>
                             <option value="other">Другое</option>
                         </select>
-                    </div>
+                    </p>
                 </div>
 
-                <div class="form-group">
+                <p class="form-group">
                     <label for="message">Описание заказа</label>
                     <textarea id="message" name="message" rows="5" placeholder="Опишите ваши пожелания, материалы или детали..."></textarea>
-                </div>
+                </p>
 
                 <div class="form-footer">
                     <button type="submit" class="submit-btn">Отправить заявку</button>
                 </div>
             </form>
-            <div id="results-container" class="results-container"></div>
+            <div id="results-container" class="results-container" style="overflow-x: auto;"></div>
         </section>
     </main>
 
@@ -105,7 +105,7 @@
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="#">ЧАВО</a></li>
+                    <li><a href="FAQ.html">ЧАВО</a></li>
                 </ul>
             </div>
 

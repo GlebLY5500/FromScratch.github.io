@@ -25,7 +25,7 @@ document.querySelector('.order-form').addEventListener('submit', function(e) {
         <p><strong>Имя:</strong> ${data.name}</p>
         <p><strong>Телефон:</strong> ${data.phone}</p>
         <p><strong>Услуга:</strong> ${this.querySelector('#service option:checked').text}</p>
-        <p><strong>Детали:</strong> ${data.message}</p>
+        <p style="width:100%;"><strong>Детали:</strong> ${data.message}</p>
     `;
 
     resultsContainer.prepend(resultCard);

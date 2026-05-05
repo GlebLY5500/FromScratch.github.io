@@ -34,7 +34,7 @@ function renderServices(data) {
             const usd = (s.priceBYN / USD_TO_BYN).toFixed(0);
             
             priceHTML = `
-                <div class="main-price">${s.priceBYN} BYN</div>
+                <div class="main-price">от ${s.priceBYN} BYN</div>
                 <div class="alt-price">\u{2248}${usd}$</div>
             `;
         } else {
